@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_검색_개인습득</title>
+    <link rel="stylesheet" href="css/searchOffi1.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <div class="searchOffi_header">        
+        <div class="header_text">
+            <h2>습득물 게시판</h2>
+        </div>
+        <button type="submit" class="filter_btn">Filter</button>
+    </div>
+    <div class="search_container">
+        <input type="search" value="" class="search_text" placeholder="습득물 검색">
+        <button type="submit" class="search_btn">검색</button>      
+    </div>
+    <div class="search_option">
+        <button type="submit" class="Indi_btn" onClick="location.href='searchIndi.html'">개인습득물</button>
+        <button type="submit" class="Offi_btn circle_btn" onClick="location.href='searchOffi1.html'">학생지원팀</button>
+    </div>
+    <div class="offi-list">
+        <div class="offi-item">
+            <div class="offiItem-info">
+                <h3>국민은행 나라사랑 체크카드</h3>
+                <p>[명륜] 법학관 1층 자판기</p>
+            </div>
+            <div class="offi-date">
+                2021.07.20
+            </div>
+        </div>
+        <div class="offi-item">
+            <div class="offiItem-info">
+                <h3>닥스 장지갑</h3>
+                <p>[명륜] 경영관 1층 학생식당</p>
+            </div>
+            <div class="offi-date">
+                2021.07.19
+            </div>
+        </div>
+        <div class="offi-item">
+            <div class="offiItem-info">                
+                <div>
+                    <div class="offiItem-fin">[반환완료]</div>
+                    <h3>E하우스 기숙사 키</h3>
+                </div>
+                <p>[명륜] 교내 셔틀버스</p>
+            </div>
+            <div class="offi-date">
+                2021.07.17
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search circle-icon"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
