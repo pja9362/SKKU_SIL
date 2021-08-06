@@ -87,7 +87,6 @@
             /*알림 텍스트*/
         .notifi_item .noti_text{
             margin-bottom: 34px;
-            width: 110%;
         }
             /*알림 이미지*/
         .notifi_item .noti_img{
