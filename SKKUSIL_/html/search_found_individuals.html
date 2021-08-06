@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_검색_개인습득</title>
+    <link rel="stylesheet" href="css/search_found_individuals.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <!--뒤로가기 버튼-->
+    <div class="back">
+        <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+    </div>
+    <!--header-->
+    <div class="header">
+        <h2>분실물 게시판</h2>
+    </div>
+    <!--검색창 / search_container -->
+    <div class="search_container">
+        <input type="search" value="" class="search_text" placeholder="습득물 검색">
+        <button type="submit" class="search_btn">검색</button>      
+    </div>
+    <!--검색 옵션 search_option (개인습득물 or 학생지원팀)-->
+    <div class="search_option">
+        <button type="submit" class="Indi_btn circle_btn" onClick="location.href='search_found_individuals.html'">개인습득물</button>
+        <button type="submit" class="Offi_btn" onClick="location.href='search_found_studentaid.html'">학생지원팀</button>
+    </div>
+    <!--개인습득물 전체 틀 indi_list-->
+    <div class="indi_list">
+        <ul>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex4.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>전자담배</p>
+                    <p>[명륜 / 경영관]</p>
+                    <div class="item-sort">전자기기</div>
+                </div>
+            </li>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex5.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>회계원리 전공책</p>
+                    <p>[명륜 / 중앙학술정보관]</p>
+                    <div class="item-sort">서적류</div>
+                </div>
+            </li>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex6.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>블루투스 마우스</p>
+                    <p>[율전 / 삼성학술정보관]</p>
+                    <div class="item_sort">전자기기</div>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex7.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>전자담배</p>
+                    <p>[명륜 / 경영관]</p>
+                    <div class="item-sort">전자기기</div>
+                </div>
+            </li>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex8.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>회계원리 전공책</p>
+                    <p>[명륜 / 중앙학술정보관]</p>
+                    <div class="item-sort">서적류</div>
+                </div>
+            </li>
+            <!--개인습득물 - 개별 아이템 indiItem-->
+            <li>
+                <div class="indiItem_img">
+                    <img src="imgs/ex5.jpeg" alt="ex_img" style="width: 100%; height:100px; border-radius: 10px;">
+                </div>
+                <div class="indiItem-info">
+                    <p>블루투스 스피커</p>
+                    <p>[율전 / 삼성학술정보관]</p>
+                    <div class="item-sort">서적류</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search" style="color: rgb(141, 198, 63);"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

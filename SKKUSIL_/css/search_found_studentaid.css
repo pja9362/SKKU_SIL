@@ -1,0 +1,177 @@
+@media only screen and (max-width: 800px){
+    /* 1. 전체 페이지 공통 요소 */
+        /* 링크 색 지우기 */    
+        a{
+            color: black;
+        }
+        /* 하단 네비게이션 바 */
+        .mobile_list{
+            align-content: center;
+            display: inline-block;
+            color: black;
+            position: fixed;
+            bottom:0;
+            left: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            padding: 0%;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            background-color: white;
+            margin: 0;
+            vertical-align: bottom;
+            border-top: rgb(187, 187, 187) 1px solid;
+        }
+    
+        .mobile_list i {
+            font-size: 25px;
+        }
+    
+        #home{
+            background-color: rgb(141, 198, 63);
+            color: white;
+            padding: 5px 5px;
+            border-radius: 4rem;
+        }
+
+    
+    /* 2. 전체 공통 요소는 아니지만, 다른 페이지에서도 쓰이는 요소 */
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Dotum,'돋움',Helvetica,sans-serif;
+        }
+        
+        .header{
+            padding: 30px 0% 10px;
+            text-align: center;
+            border-bottom: 1px gray solid;
+            position:fixed;
+            width: 100%;
+            background-color: white;
+            margin: 0;
+            top: 0;
+            z-index: 1;
+        }
+        .header h2{
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+        }
+    
+    /* 3. only 이 페이지에서만 쓰이는 요소 */
+        /*검색 옵션 search_option (개인습득물 or 학생지원팀)*/
+        .search_option{
+            margin: 0 auto 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, .2);
+            width: 85%;
+            height: 20px;
+            border-radius: 30px;
+            padding: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .search_option button{
+            width: fit-content;
+            height: 150%;
+            border:0;
+            padding:0 12% 0;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+        .Indi_btn{
+            color: rgba(0, 0, 0, .5);
+        }
+        /*선택된 버튼 강조 표시(학생지원팀 버튼)*/
+        .circle_btn{
+            background: #fff;
+            border-radius: 30px;
+            font-weight: bolder;
+            color: rgb(122, 175, 49);
+        }
+        /*검색창*/
+        .search_container{
+            margin: 80px auto 15px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, .2);
+            width: 85%;
+            height: 20px;
+            border-radius: 30px;
+            padding: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        /*습득 위치 정보*/
+        .offi-list p{
+            padding-top: 5px;
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+        /*개별 아이템*/
+        .offi-item{
+            margin-left: 10px;
+            display: flex;
+            font-size: 13px;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        /*아이템(습득물)명*/
+        .offi-item h3{
+            font-weight: bold;
+            padding-top: 3px;
+        }
+        /*개별 아이템 정보*/
+        .offi-item .offiItem-info{
+            width: 100%;
+        }
+        /*업로드 날짜 정보*/
+        .offi-date{
+            padding-right: 3%;
+            font-size: 12px;
+            font-weight: bold;
+            color:#8e8e8e;
+        
+        }
+        .offi-item .offiItem-info div{
+            display: flex;
+        }
+        /*아이템 반환여부 - 반환완료*/
+        .offiItem-fin{
+            color:red;
+            font-weight: bold;
+            padding-right: 5px;
+            padding-top: 3px;
+        }
+        /* search 페이지 공통(검색창) */
+        .search_text {
+            margin-left: 10px;
+            font-size: 16px;
+            background: none;
+            color: #5a6674;
+            width: 100%;
+            height: auto;
+            border: none;
+            appearance: none;
+            outline: none;
+        }
+        .search_btn{
+            background-color: #fff;
+            border: 1px solid #000;
+            height: 150%;
+            margin: 5px;
+            width: 25%;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+        }
+}
