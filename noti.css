@@ -87,11 +87,12 @@
             /*알림 텍스트*/
         .notifi_item .noti_text{
             margin-bottom: 34px;
+            width: 110%;
         }
             /*알림 이미지*/
         .notifi_item .noti_img{
             margin: 5%;
-            width: 45%;
+            width: 40%;
         }
             /*알림 시간 정보 */
         .notifi_item .noti_time{
