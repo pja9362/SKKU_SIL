@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_마이페이지</title>
+    <link rel="stylesheet" href="css/mypage.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <header>
+        <!--헤더 부분 / 마이페이지 기본정보(학번, 이름, 소속정보)-->
+        <div class="mypage-header">
+            <h1>17 주재현</h1>
+            <h5>명륜캠퍼스 / 경영학과</h5>
+        </div>
+        <div class="mypage-top-area">내 분실물 & 습득물</div>
+    </header>
+    <!--mypage-container : 잃어버린/주운 물건 리스트 전체 틀-->
+    <div class="mypage-container">
+        <!--mypage-myLost-container: 잃어버린 물건 목록 전체 틀(타이틀, 이미지목록)-->
+        <div class="mypage-myLost-container">
+            <!--타이틀 - '내가 잃어버린 물건 목록' -->
+            <div class="mypage-text">
+                내가 잃어버린 물건 목록
+            </div>
+            <!--'잃어버린 물건' 목록 기본 틀-->
+            <div class="mypage-wrapper">
+                <ul>
+                    <!--잃어버린 물건 - 개별 아이템-->
+                    <li>                        
+                        <div class="mypage-option">
+                            <!--아이템 미리보기 이미지-->
+                            <img src="imgs/ex1.jpeg"style="width:100%; height:100px;">
+                            <!--미리보기 이미지 클릭시 > 자세히 보기 버튼-->
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <!--잃어버린 물건 - 개별 아이템-->
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex2.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <!--잃어버린 물건 - 개별 아이템-->
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex3.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex4.jpeg"style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex5.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex6.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+        <!--mypage-myFound-container: 주운 물건 목록 전체 틀(타이틀, 사진목록)-->
+        <div class="mypage-myFound-container">
+            <!--타이틀 - '내가 주운 물건 목록' -->
+            <div class="mypage-text">
+                내가 주운 물건 목록
+            </div>
+            <!--'주운 물건' 목록 기본 틀 -->
+            <div class="mypage-wrapper">
+                <ul>
+                    <!--주운 물건 - 개별 아이템-->
+                    <li>
+                        <div class="mypage-option">
+                            <!--아이템 미리보기 이미지-->
+                            <img src="imgs/ex7.jpeg"style="width:100%; height:100px;">
+                            <!--미리보기 이미지 클릭시 > 자세히 보기 버튼-->
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <!--주운 물건 - 개별 아이템-->
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex8.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                    <!--주운 물건 - 개별 아이템-->
+                    <li>
+                        <div class="mypage-option">
+                            <img src="imgs/ex9.jpeg" style="width:100%; height:100px;">
+                            <div class="mypage-more">                    
+                                <button type="submit" class="mypage-morebtn"> 자세히 보기 </button>
+                            </div> 
+                        </div>
+                    </li>
+                </ul>
+                <!--하단 더 보기 버튼-->
+                <button type="submit" class="mypage-btn">더 보기</button>
+            </div>
+
+        </div>
+    </div>
+
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell" ></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user" style="color: rgb(141, 198, 63);" style="color: rgb(141, 198, 63);"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

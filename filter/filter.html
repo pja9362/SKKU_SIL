@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_필터</title>
+    <link rel="stylesheet" href="css/filter.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <!--filter-container, 카테고리 필터 전체 틀-->
+    <div class="filter-container">
+        <h2>카테고리 필터</h2>
+        <!--카테고리 박스 전체 틀 filter-select-box-->
+        <div class="filter-select-box">
+            <!--캠퍼스 카테고리-->
+
+            <!--filter-selected : 선택된 항목-->
+            <!--기본값은 카테고리별분류로 설정(ex.캠퍼스, 습득위치, 색상)-->
+            <!--=> 특정 요소 선택시 그 값으로 바뀜( 캠퍼스 -> 명륜 인문사회과학 캠퍼스)-->
+            <div class="filter-selected">
+                <!--카테고리명 or 선택된 항목-->
+                <div class="filter-selected-text">캠퍼스</div>
+                <!--화살표 이미지-->
+                <img src="imgs/filter_arrowIcon.png" style="width: 15px; height: 15px ;">
+            </div>
+            <!--카테고리별 세부 선택 틀-->
+            <div class="filter-options-container">
+                <!-- 카테고리별 선택 항목-->
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="명륜"
+                        name="category"
+                    />
+                    <label for="명륜">명륜 인문사회과학 캠퍼스</label>
+                </div>
+                <!-- 카테고리별 선택 항목-->
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="율전"
+                        name="category"
+                    />
+                    <label for="율전">율전 자연과학 캠퍼스</label>
+                </div>
+            </div>
+
+            <div class="filter-selected">
+                <div class="filter-selected-text">습득위치</div>
+                <img src="imgs/filter_arrowIcon.png" style="width: 15px; height: 15px ;">
+            </div>
+            <div class="filter-options-container">
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="경영관"
+                        name="category"
+                    />
+                    <label for="경영관">경영관</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="국제관"
+                        name="category"
+                    />
+                    <label for="국제관">국제관</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="수선관"
+                        name="category"
+                    />
+                    <label for="수선관">수선관</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="학생회관"
+                        name="category"
+                    />
+                    <label for="학생회관">학생회관</label>
+                </div>
+            </div>
+
+            <div class="filter-selected">
+                <div class="filter-selected-text">습득 물품 종류</div>
+                <img src="imgs/filter_arrowIcon.png" style="width: 15px; height: 15px ;">
+            </div>
+            <div class="filter-options-container">
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="electro"
+                        name="category"
+                    />
+                    <label for="electro">전자기기</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="book"
+                        name="category"
+                    />
+                    <label for="book">서적류</label>
+                </div>
+            </div>
+            <div class="filter-selected">
+                <div class="filter-selected-text">색상</div>
+                <img src="imgs/filter_arrowIcon.png" style="width: 15px; height: 15px ;">
+            </div>
+            <div class="filter-options-container">
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="red"
+                        name="category"
+                    />
+                    <label for="red">Red</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="black"
+                        name="category"
+                    />
+                    <label for="black">Black</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="white"
+                        name="category"
+                    />
+                    <label for="white">white</label>
+                </div>
+            </div>
+            <div class="filter-selected">
+                <div class="filter-selected-text">습득 날짜</div>
+                <img src="imgs/filter_arrowIcon.png" style="width: 15px; height: 15px ;">
+            </div>
+            <div class="filter-options-container">
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="electro"
+                        name="category"
+                    />
+                    <label for="electro">전자기기</label>
+                </div>
+                <div class="filter-option">
+                    <input
+                        type="radio"
+                        class="radio"
+                        id="book"
+                        name="category"
+                    />
+                    <label for="book">서적류</label>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <script src="filter.js"></script>
+
+    <!--필터 적용 버튼 / filter-btn-container-->
+    <div class="filter-btn-container">
+        <button type="submit" class="filter-savebtn">적용하기</button>
+    </div>
+    
+</body>
+</html>
