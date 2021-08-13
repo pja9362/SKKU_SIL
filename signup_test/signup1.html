@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKKUSIL_회원가입</title>
+    <link rel="stylesheet" href="css/signup1.css">
+    <script src="https://kit.fontawesome.com/4b8f423cbe.js" crossorigin="anonymous"></script> <!--폰트 cdn-->
+</head>
+<body>
+    <div class="back">
+        <button onclick="history.back()"><i class="fa fa-chevron-left"></i></button>
+    </div>
+    <nav class="navbar"> <!--하단 네비게이션바-->
+        <ul class="mobile_list"> <!--폰트(font awesome cdn 활용)-->
+            <li><a href="new.html"><i class="fa fa-plus"></i></a></li>
+            <li><a href="search.html"><i class="fa fa-search"></i></a></li>
+            <li><a href="index.html"><i class="fa fa-home" id="home"></i></a></li>
+            <li><a href="noti.html"><i class="fa fa-bell"></i></a></li>
+            <li><a href="login.html"><i class="fa fa-user" style="color: rgb(141, 198, 63);"></i></a></li>
+        </ul>
+    </nav>
+    <div class="logo">
+        <img src="imgs/SKKUsilLogo.png">
+    </div>
+    <div id="wrapper">
+        <!-- content-->
+        <div id="content">
+            <!-- ID -->
+            <div class="form-control success">
+                <h3><label for="id">아이디</label></h3>
+                <span class="box int_id">
+                    <input type="text" placeholder="아이디" id="id"  class="int" maxlength="20">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <small>Error message</small>
+            </div>
+            
+            <!-- PW1 -->
+            <div class="form-control error">
+                <h3><label for="pswd1">비밀번호</label></h3>
+                <span class="box int_id">
+                    <input type="text" placeholder="비밀번호" id="pswd1"  class="int" maxlength="20">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <small>Error message</small>
+            </div>
+            
+            <!-- PW Confirm -->
+            <div class="form-control">
+                <h3><label for="pswd2">비밀번호 재확인</label></h3>
+                <span class="box int_id">
+                    <input type="text" placeholder="비밀번호 재확인" id="pswd2"  class="int" maxlength="20">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+                <small>Error message</small>
+            </div>
+            
+            <!-- NAME -->            
+            <div>
+                <h3 class="join_title"><label for="name">이름</label></h3>
+                <span class="box int_name">
+                    <input type="text" id="name" class="int" maxlength="20">
+                </span>
+            </div>
+            <!-- Student Number-->
+            <div>
+                <h3 class="join_title"><label for="std_number">학번</label></h3>
+                <span class="box int_name">
+                    <input type="text" id="name" class="int" maxlength="20">
+                </span>
+            </div>
+            <!-- E-mail -->
+            <div>
+                <h3 class="join_title"><label for="Email">킹고 이메일 인증</label></h3>
+                <div id="Email_wrap">
+                    <!-- E-mail ID -->
+                    <div id="Email_ID">
+                        <span class="box">
+                            <input type="text" id="ID" class="int" maxlength="20" placeholder="이메일 앞 주소">
+                        </span>
+                    </div>
+                    <!-- E-mail Type -->
+                    <div id="Email_type">
+                        <span class="box">
+                            <select id="TYPE" class="sel">
+                                <option>선택</option>
+                                <option value="01">@ skku.edu</option>
+                                <option value="02">@ g.skku.edu</option>
+                            </select>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Campus -->
+            <div>
+                <h3 class="join_title"><label for="campus">원전공 캠퍼스</label></h3>
+                <span class="box campus_code">
+                    <select id="std_campus" class="sel">
+                        <option>선택</option>
+                        <option value="M">명륜 캠퍼스</option>
+                        <option value="Y">율전 캠퍼스</option>
+                    </select>                            
+                </span>
+            </div>
+            <!-- Phone Number -->
+            <div>
+                <h3 class="join_title"><label for="phoneNo">휴대전화</label></h3>
+                <span class="box int_mobile">
+                    <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력">
+                </span>  
+            </div>
+            <!-- JOIN BTN-->
+            <div class="btn_area">
+                <button type="button" id="btnJoin">
+                    <span>가입하기</span>
+                </button>
+            </div>
+        </div> 
+        <!-- content-->
+    </div> 
+    <!-- wrapper -->
+<script src="main.js"></script>
+<script src="signup1.js"></script>
+</body>
+</html>
